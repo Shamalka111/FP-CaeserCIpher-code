@@ -18,11 +18,11 @@ object CaesarCipher extends App{
     }
 
     def cipherU(template:String, c:Char, key:Int)={
-        alphaUpper((c-template.head+key+template.size) % alphaUpper.size)
+        alphaUpper((c-65+key+template.size) % alphaUpper.size)
     }
 
     def cipherL(template:String, c:Char, key:Int)={
-        alphaLower((c-template.head+key+template.size) % alphaLower.size)
+        alphaLower((c-97+key+template.size) % alphaLower.size)
     }
 
     //val key= scala.io.StdIn.readLine("Key is: ").toInt
